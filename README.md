@@ -38,9 +38,8 @@ duration = netflix_df[
     & (netflix_df["type"] == "Movie")
 ]["duration"].mode()[0]
 ```
-
-# Count short action movies (<90 mins) from the 1990s
 ```python
+# Count short action movies (<90 mins) from the 1990s
 short_movie_count = netflix_df[
     (netflix_df["genre"] == "Action")
     & (netflix_df["duration"] < 90)
