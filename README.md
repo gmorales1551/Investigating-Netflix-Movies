@@ -1,4 +1,5 @@
 # Investigating-Netflix-Movies
+
 An exploratory data analysis in Python using Pandas to investigate 1990s movie duration trends and short action movie frequencies on Netflix.
 
 ## Project Overview
@@ -38,6 +39,10 @@ duration = netflix_df[
     & (netflix_df["type"] == "Movie")
 ]["duration"].mode()[0]
 ```
+
+### 2. Short 1990s Action Movie Count
+Filtered for 1990s Action movies with a runtime under 90 minutes to determine the total count.
+
 ```python
 # Count short action movies (<90 mins) from the 1990s
 short_movie_count = netflix_df[
